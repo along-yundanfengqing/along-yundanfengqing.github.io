@@ -3,36 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>python tips | Konwledge Tips</title>
+  <title>numpy tips | Konwledge Tips</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="rangerange(m,n)    #产生等差数列，序列开始于m，重复加1，直到n之前的n-1。
-range(n)    #等价于range(0,n)
-range(m,n,s)    #步长s：step value，变步长的整数序列。
-##encode&amp;amp;decode
-
-string
-  In computing, a string is a particular series of le">
+  <meta name="description" content="ndarray(numpy的对象)1234ndarray.ndim	#数据轴的个数。二维数据两个轴。ndarray.shape	#数组的矩阵形状ndarray.size	#数组元素总个数ndarray.dtype	#数组元素的对象
+创建数组np.array    #(列表)
+reshape(m,n)    #m行n列数组
+np.zeros((m,n))    #0矩阵
+np.ones((m,n))">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python tips">
-<meta property="og:url" content="http://yoursite.com/2016/12/25/python_tips/index.html">
+<meta property="og:title" content="numpy tips">
+<meta property="og:url" content="http://yoursite.com/2016/12/25/python_numpy/index.html">
 <meta property="og:site_name" content="Konwledge Tips">
-<meta property="og:description" content="rangerange(m,n)    #产生等差数列，序列开始于m，重复加1，直到n之前的n-1。
-range(n)    #等价于range(0,n)
-range(m,n,s)    #步长s：step value，变步长的整数序列。
-##encode&amp;amp;decode
-
-string
-  In computing, a string is a particular series of le">
+<meta property="og:description" content="ndarray(numpy的对象)1234ndarray.ndim	#数据轴的个数。二维数据两个轴。ndarray.shape	#数组的矩阵形状ndarray.size	#数组元素总个数ndarray.dtype	#数组元素的对象
+创建数组np.array    #(列表)
+reshape(m,n)    #m行n列数组
+np.zeros((m,n))    #0矩阵
+np.ones((m,n))">
 <meta property="og:updated_time" content="2016-12-25T12:49:29.942Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python tips">
-<meta name="twitter:description" content="rangerange(m,n)    #产生等差数列，序列开始于m，重复加1，直到n之前的n-1。
-range(n)    #等价于range(0,n)
-range(m,n,s)    #步长s：step value，变步长的整数序列。
-##encode&amp;amp;decode
-
-string
-  In computing, a string is a particular series of le">
+<meta name="twitter:title" content="numpy tips">
+<meta name="twitter:description" content="ndarray(numpy的对象)1234ndarray.ndim	#数据轴的个数。二维数据两个轴。ndarray.shape	#数组的矩阵形状ndarray.size	#数组元素总个数ndarray.dtype	#数组元素的对象
+创建数组np.array    #(列表)
+reshape(m,n)    #m行n列数组
+np.zeros((m,n))    #0矩阵
+np.ones((m,n))">
   
     <link rel="alternate" href="/atom.xml" title="Konwledge Tips" type="application/atom+xml">
   
@@ -85,10 +79,10 @@ string
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-python_tips" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-python_numpy" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/12/25/python_tips/" class="article-date">
-  <time datetime="2016-12-25T11:28:32.000Z" itemprop="datePublished">2016-12-25</time>
+    <a href="/2016/12/25/python_numpy/" class="article-date">
+  <time datetime="2016-12-25T11:21:32.000Z" itemprop="datePublished">2016-12-25</time>
 </a>
     
   </div>
@@ -99,7 +93,7 @@ string
         
   
     <h1 class="article-title" itemprop="name">
-      python tips
+      numpy tips
     </h1>
   
 
@@ -107,48 +101,19 @@ string
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="range"><a href="#range" class="headerlink" title="range"></a>range</h2><pre><code>range(m,n)    #产生等差数列，序列开始于m，重复加1，直到n之前的n-1。
-range(n)    #等价于range(0,n)
-range(m,n,s)    #步长s：step value，变步长的整数序列。
-</code></pre><p>##encode&amp;decode</p>
-<ol>
-<li><p>string</p>
-<p>  In computing, a string is a particular series of letters, numbers, symbols, or spaces, for example a word or phrase that you want to search for in a document.</p>
-</li>
-<li><p>byte</p>
-<p>  In computing, a byte is a unit of storage approximately equivalent to one printed character.</p>
-</li>
-<li>string类型才可以encode(‘utf8’)</li>
-<li>byte类型才可以decode(‘utf8’)</li>
-<li><p>python3中汉字就是unicode编码</p>
-<p>  print(print(‘a’==’\u0061’)<br>  True</p>
-</li>
-</ol>
-<p>##python文档资源</p>
-<ul>
-<li><p>dir    列出对象中可用属性列表</p>
-<p>   import sys<br>   dir(sys)</p>
-</li>
-<li><p>查看内置对象类型提供的属性</p>
-<p>   dir([])    #查看列表属性<br>   dir(‘’)    #查看字符串属性</p>
-</li>
-</ul>
-<ul>
-<li><p>查看用户定义的文档字符串（三重引号块字符）</p>
-<p>   print(doc.<em>doc</em>)</p>
-</li>
-<li><p>查看内置文档字符串(doc两边是两个短下划线）</p>
-<p>   import sys<br>   print(sys.<strong>doc</strong>)    #模块的可读说明<br>   print(sys.getrefcount.<strong>doc</strong>)    #模块内函数的说明<br>   print(int.<strong>doc</strong>)    #读取系统内置函数的说明</p>
-</li>
-<li><p>help函数</p>
-<p>   help(str.encode)    #取得内置类型的help信息，使用类型名称dict,str,list<br>   help(bytes.decode)</p>
-</li>
-</ul>
-
+        <h3 id="ndarray-numpy的对象"><a href="#ndarray-numpy的对象" class="headerlink" title="ndarray(numpy的对象)"></a>ndarray(numpy的对象)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ndarray.ndim	<span class="comment">#数据轴的个数。二维数据两个轴。</span></div><div class="line">ndarray.shape	<span class="comment">#数组的矩阵形状</span></div><div class="line">ndarray.size	<span class="comment">#数组元素总个数</span></div><div class="line">ndarray.dtype	<span class="comment">#数组元素的对象</span></div></pre></td></tr></table></figure>
+<h3 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h3><pre><code>np.array    #(列表)
+reshape(m,n)    #m行n列数组
+np.zeros((m,n))    #0矩阵
+np.ones((m,n))    #1矩阵
+</code></pre><h3 id="数组统计运算"><a href="#数组统计运算" class="headerlink" title="数组统计运算"></a>数组统计运算</h3><pre><code>sum(arr)    #全部行和列的和
+sum(arr,axis=1)    #每行求和
+sum(arr,axis=0)    #每列求和
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/25/python_tips/" data-id="cix4pxvru0002f1i5iq01c6jr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/25/python_numpy/" data-id="cix4pxvrm0001f1i51lfciual" class="article-share-link">Share</a>
       
       
     </footer>
@@ -157,20 +122,15 @@ range(m,n,s)    #步长s：step value，变步长的整数序列。
     
 <nav id="article-nav">
   
-    <a href="/2016/12/25/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/25/python_tips/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Hello World
+          python tips
         
       </div>
     </a>
   
-  
-    <a href="/2016/12/25/python_numpy/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">numpy tips</div>
-    </a>
   
 </nav>
 
