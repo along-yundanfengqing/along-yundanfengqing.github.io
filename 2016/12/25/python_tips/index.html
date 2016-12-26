@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Python Tips | Konwledge Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="range123range(m,n)	#产生等差数列，序列开始于m，重复加1，直到n之前的n-1。range(n)	#等价于range(0,n)range(m,n,s)	#步长s：step value，变步长的整数序列。
+encode&amp;amp;decode
+string
+  In computing, a string is a particular series of letters, numb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Tips">
+<meta property="og:url" content="http://yoursite.com/2016/12/25/python_tips/index.html">
+<meta property="og:site_name" content="Konwledge Tips">
+<meta property="og:description" content="range123range(m,n)	#产生等差数列，序列开始于m，重复加1，直到n之前的n-1。range(n)	#等价于range(0,n)range(m,n,s)	#步长s：step value，变步长的整数序列。
+encode&amp;amp;decode
+string
+  In computing, a string is a particular series of letters, numb">
+<meta property="og:updated_time" content="2016-12-25T14:30:23.062Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Tips">
+<meta name="twitter:description" content="range123range(m,n)	#产生等差数列，序列开始于m，重复加1，直到n之前的n-1。range(n)	#等价于range(0,n)range(m,n,s)	#步长s：step value，变步长的整数序列。
+encode&amp;amp;decode
+string
+  In computing, a string is a particular series of letters, numb">
+  
+    <link rel="alternate" href="/atom.xml" title="Konwledge Tips" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Konwledge Tips</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">每天进步一点点</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-python_tips" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/12/25/python_tips/" class="article-date">
+  <time datetime="2016-12-25T11:28:32.000Z" itemprop="datePublished">2016-12-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python Tips
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="range"><a href="#range" class="headerlink" title="range"></a>range</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">range(m,n)	<span class="comment">#产生等差数列，序列开始于m，重复加1，直到n之前的n-1。</span></div><div class="line">range(n)	<span class="comment">#等价于range(0,n)</span></div><div class="line">range(m,n,s)	<span class="comment">#步长s：step value，变步长的整数序列。</span></div></pre></td></tr></table></figure>
+<h2 id="encode-amp-decode"><a href="#encode-amp-decode" class="headerlink" title="encode&amp;decode"></a>encode&amp;decode</h2><ol>
+<li><p>string</p>
+<p>  In computing, a string is a particular series of letters, numbers, symbols, or spaces, for example a word or phrase that you want to search for in a document.</p>
+</li>
+<li><p>byte</p>
+<p>  In computing, a byte is a unit of storage approximately equivalent to one printed character.</p>
+</li>
+<li>string类型才可以encode(‘utf8’)</li>
+<li>byte类型才可以decode(‘utf8’)</li>
+<li><p>python3中汉字就是unicode编码</p>
+<p>  print(print(‘a’==’\u0061’)<br>  True</p>
+</li>
+</ol>
+<h2 id="python文档资源"><a href="#python文档资源" class="headerlink" title="python文档资源"></a>python文档资源</h2><ul>
+<li><p>dir    列出对象中可用属性列表</p>
+<p>   import sys<br>   dir(sys)</p>
+</li>
+<li><p>查看内置对象类型提供的属性</p>
+<p>   dir([])    #查看列表属性<br>   dir(‘’)    #查看字符串属性</p>
+</li>
+</ul>
+<ul>
+<li><p>查看用户定义的文档字符串（三重引号块字符）</p>
+<p>   print(doc.<em>doc</em>)</p>
+</li>
+<li><p>查看内置文档字符串(doc两边是两个短下划线）</p>
+<p>   import sys<br>   print(sys.<strong>doc</strong>)    #模块的可读说明<br>   print(sys.getrefcount.<strong>doc</strong>)    #模块内函数的说明<br>   print(int.<strong>doc</strong>)    #读取系统内置函数的说明</p>
+</li>
+<li><p>help函数</p>
+<p>   help(str.encode)    #取得内置类型的help信息，使用类型名称dict,str,list<br>   help(bytes.decode)</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/12/25/python_tips/" data-id="cix5eppi30003q4igdh8l5z17" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/12/25/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/25/python_numpy/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Numpy Tips</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/12/25/windowtest/">English Words</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/25/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/25/python_tips/">Python Tips</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/25/python_numpy/">Numpy Tips</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 along-yundanfengqing<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
